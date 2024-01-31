@@ -1,0 +1,108 @@
+:root{
+    --default-font: "Roboto", sans-serif;
+    --form-font: "Montserrat", sans-serif ;
+}
+body{
+    margin: 0;
+    font-family: var(--default-font);
+}
+
+
+.container{
+    display: flex;
+    min-width: 60%;
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: var(--default-font);
+    
+}
+.container-item-1{
+    background: url(siteImage.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90rem;
+    position: relative;
+}
+
+.container-item-2 > p {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 20px 30px;
+}
+.input-divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+   
+}
+
+.container-input{
+    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+    gap: 10px;
+    font-family: var(--form-font);
+    position: relative;
+    padding: 30px 0;
+}
+
+.new-div{
+    box-shadow: -3px 2px 8px 0px rgba(0,0,0,0.55);
+    margin: 30px 0;
+    padding: 20px 30px;
+}
+
+input{
+    max-width: 60%;
+    padding: 5px 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+button{
+    max-width: 200px;
+    min-width: 100px;
+    padding: 20px 20px;
+    background-color: rgba(78, 109, 32, 0.596);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.button-div{
+    margin: 30px;
+}
+.logo{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo > p{
+    color: white;
+    display: inline;
+    font-size: 70px;
+    font-family: var(--form-font);
+}
+.image{
+    max-width: 100px;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+#isPassword{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
